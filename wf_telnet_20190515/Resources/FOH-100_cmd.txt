@@ -1,0 +1,23 @@
+1.ip: 192.168.1.12  port:23   login:admin  passwd:admin
+ 
+2.get device info 获取当前板卡版本信息，温度，ip，mac，sn，pn等
+
+3.get pon0_valid_onu  获取当前链路里上行ONU的sn和onu id
+
+4.get loid_pwd_rssi 获取当前链路里loid,password,sn-passwd,rssi的相关信息
+
+5.upgrade fpga tftp 192.168.1.x top.bin 更新FPGA版本，192.168.1.x为PC的ip，
+更新完版本后通过system restart重启设备
+upgrade fpga gpon tftp 192.168.1.88 top.bin           //gpon升级
+upgrade fpga epon tftp 192.168.1.88 top.bin             //epon升级
+
+
+6.spi read 0查看FPGA版本
+
+7.set uart1_debug enable 打开串口打印信息
+
+
+如果现场测试出现问题，可根据下面情况打开对应的debug开关，通过插拔光纤让ONU重新上线，获取调试信息。
+1.当出现ONU上线不稳定，出现上线掉线的情况(未注册ONU不在此列)， 通过telnet进入设备输入命令 set onu_debug enable
+2.当出现ONU的SN或者SN-PASSWD获取不到或者获取错误的情况时，输入命令set ploam_debug enable
+3.当出现LOID或者LOID-PASSWD获取不到或者获取错误的情况时，通过telnet输入命令set omci_debug enable
