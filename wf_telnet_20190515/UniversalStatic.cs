@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace wf_telnet_20190515
@@ -16,15 +17,6 @@ namespace wf_telnet_20190515
         public const string acx_Disconnect = "Disconnected";
         public const string acx_Connect = "Conncected";
 
-        public static bool ValidateIP(string addrString)
-        {
-            IPAddress address;
-            if (IPAddress.TryParse(addrString, out address))
-                return true;
-            else
-                return false;
-        }
-
         public static void DrawLineInFooter(Control control, Color color, int thickness)
         {
             int y = control.Height;
@@ -34,6 +26,15 @@ namespace wf_telnet_20190515
         {
             Graphics graphicsObj = control.CreateGraphics();
             graphicsObj.DrawLine(new Pen(color, thickness), x, y, x1, y1);
+        }
+
+        public static bool ValidateIP(string addrString)
+        {
+            IPAddress address;
+            if (IPAddress.TryParse(addrString, out address))
+                return true;
+            else
+                return false;
         }
 
         public static bool PingTheDevice(string ipAdd)
@@ -65,6 +66,7 @@ namespace wf_telnet_20190515
             }
         }
 
+ 
         //public static string SplitPascal(string text)
         //{
         //    Regex r = new Regex("([A-Z]+[a-z]+)");

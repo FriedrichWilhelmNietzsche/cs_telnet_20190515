@@ -51,7 +51,7 @@
             this.btnUpgradeEPON = new System.Windows.Forms.Button();
             this.btnLogData = new System.Windows.Forms.Button();
             this.btnRestartDevice = new System.Windows.Forms.Button();
-            this.btnResetAPP = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnSendCommand = new System.Windows.Forms.Button();
             this.tbxSendCommand = new System.Windows.Forms.TextBox();
@@ -85,11 +85,11 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(374, 14);
+            this.label1.Location = new System.Drawing.Point(384, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Login";
+            this.label1.Text = "User";
             // 
             // lblHeader
             // 
@@ -219,6 +219,7 @@
             this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.Controls.Add(this.btnLogin);
             this.flowLayoutPanel1.Controls.Add(this.btnDeviceInfo);
             this.flowLayoutPanel1.Controls.Add(this.btnGetONU);
             this.flowLayoutPanel1.Controls.Add(this.btnGetLoid);
@@ -227,7 +228,6 @@
             this.flowLayoutPanel1.Controls.Add(this.btnUpgradeEPON);
             this.flowLayoutPanel1.Controls.Add(this.btnLogData);
             this.flowLayoutPanel1.Controls.Add(this.btnRestartDevice);
-            this.flowLayoutPanel1.Controls.Add(this.btnResetAPP);
             this.flowLayoutPanel1.Controls.Add(this.btnAbout);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 62);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -236,7 +236,9 @@
             // 
             // btnDeviceInfo
             // 
-            this.btnDeviceInfo.Location = new System.Drawing.Point(3, 3);
+            this.btnDeviceInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeviceInfo.Location = new System.Drawing.Point(60, 3);
             this.btnDeviceInfo.Name = "btnDeviceInfo";
             this.btnDeviceInfo.Size = new System.Drawing.Size(112, 48);
             this.btnDeviceInfo.TabIndex = 9;
@@ -246,7 +248,9 @@
             // 
             // btnGetONU
             // 
-            this.btnGetONU.Location = new System.Drawing.Point(121, 3);
+            this.btnGetONU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGetONU.Location = new System.Drawing.Point(178, 3);
             this.btnGetONU.Name = "btnGetONU";
             this.btnGetONU.Size = new System.Drawing.Size(90, 48);
             this.btnGetONU.TabIndex = 10;
@@ -256,7 +260,9 @@
             // 
             // btnGetLoid
             // 
-            this.btnGetLoid.Location = new System.Drawing.Point(217, 3);
+            this.btnGetLoid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGetLoid.Location = new System.Drawing.Point(274, 3);
             this.btnGetLoid.Name = "btnGetLoid";
             this.btnGetLoid.Size = new System.Drawing.Size(92, 48);
             this.btnGetLoid.TabIndex = 892;
@@ -266,7 +272,9 @@
             // 
             // btnGetFPGAVersion
             // 
-            this.btnGetFPGAVersion.Location = new System.Drawing.Point(315, 3);
+            this.btnGetFPGAVersion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGetFPGAVersion.Location = new System.Drawing.Point(372, 3);
             this.btnGetFPGAVersion.Name = "btnGetFPGAVersion";
             this.btnGetFPGAVersion.Size = new System.Drawing.Size(65, 48);
             this.btnGetFPGAVersion.TabIndex = 889;
@@ -276,7 +284,9 @@
             // 
             // btnUpgradeGPON
             // 
-            this.btnUpgradeGPON.Location = new System.Drawing.Point(386, 3);
+            this.btnUpgradeGPON.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpgradeGPON.Location = new System.Drawing.Point(443, 3);
             this.btnUpgradeGPON.Name = "btnUpgradeGPON";
             this.btnUpgradeGPON.Size = new System.Drawing.Size(77, 48);
             this.btnUpgradeGPON.TabIndex = 887;
@@ -286,7 +296,9 @@
             // 
             // btnUpgradeEPON
             // 
-            this.btnUpgradeEPON.Location = new System.Drawing.Point(469, 3);
+            this.btnUpgradeEPON.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpgradeEPON.Location = new System.Drawing.Point(526, 3);
             this.btnUpgradeEPON.Name = "btnUpgradeEPON";
             this.btnUpgradeEPON.Size = new System.Drawing.Size(70, 48);
             this.btnUpgradeEPON.TabIndex = 5;
@@ -296,7 +308,9 @@
             // 
             // btnLogData
             // 
-            this.btnLogData.Location = new System.Drawing.Point(545, 3);
+            this.btnLogData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogData.Location = new System.Drawing.Point(602, 3);
             this.btnLogData.Name = "btnLogData";
             this.btnLogData.Size = new System.Drawing.Size(65, 48);
             this.btnLogData.TabIndex = 890;
@@ -306,7 +320,9 @@
             // 
             // btnRestartDevice
             // 
-            this.btnRestartDevice.Location = new System.Drawing.Point(616, 3);
+            this.btnRestartDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestartDevice.Location = new System.Drawing.Point(673, 3);
             this.btnRestartDevice.Name = "btnRestartDevice";
             this.btnRestartDevice.Size = new System.Drawing.Size(72, 48);
             this.btnRestartDevice.TabIndex = 886;
@@ -314,17 +330,22 @@
             this.btnRestartDevice.UseVisualStyleBackColor = true;
             this.btnRestartDevice.Click += new System.EventHandler(this.btnRestartDevice_Click);
             // 
-            // btnResetAPP
+            // btnLogin
             // 
-            this.btnResetAPP.Location = new System.Drawing.Point(694, 3);
-            this.btnResetAPP.Name = "btnResetAPP";
-            this.btnResetAPP.Size = new System.Drawing.Size(51, 48);
-            this.btnResetAPP.TabIndex = 894;
-            this.btnResetAPP.Text = "Reset APP";
-            this.btnResetAPP.UseVisualStyleBackColor = true;
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogin.Location = new System.Drawing.Point(3, 3);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(51, 48);
+            this.btnLogin.TabIndex = 894;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnAbout
             // 
+            this.btnAbout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAbout.Location = new System.Drawing.Point(751, 3);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(43, 48);
@@ -342,6 +363,7 @@
             this.btnSendCommand.TabIndex = 10;
             this.btnSendCommand.Text = "Send";
             this.btnSendCommand.UseVisualStyleBackColor = true;
+            this.btnSendCommand.Click += new System.EventHandler(this.btnSendCommand_Click);
             // 
             // tbxSendCommand
             // 
@@ -353,9 +375,11 @@
             // 
             // rtbShowInfo
             // 
-            this.rtbShowInfo.Location = new System.Drawing.Point(135, 187);
+            this.rtbShowInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.rtbShowInfo.Location = new System.Drawing.Point(3, 133);
             this.rtbShowInfo.Name = "rtbShowInfo";
-            this.rtbShowInfo.Size = new System.Drawing.Size(536, 200);
+            this.rtbShowInfo.Size = new System.Drawing.Size(791, 287);
             this.rtbShowInfo.TabIndex = 718;
             this.rtbShowInfo.Text = "";
             // 
@@ -409,7 +433,7 @@
         private System.Windows.Forms.Button btnGetFPGAVersion;
         private System.Windows.Forms.Button btnSendCommand;
         private System.Windows.Forms.TextBox tbxSendCommand;
-        private System.Windows.Forms.Button btnResetAPP;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.RichTextBox rtbShowInfo;
     }
 }
